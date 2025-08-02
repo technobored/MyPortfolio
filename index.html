@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodrick Kibochi - Frontend Developer</title>
+    <meta name="description" content="Frontend Developer specializing in modern web applications with React, JavaScript, and responsive design.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <span class="nav__logo-text"></span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__greeting">Hello, I'm</span>
+                    <h1 class="hero__name">Lodrick Kibochi</h1>
+                    <h2 class="hero__title">Frontend Developer</h2>
+                    <p class="hero__description">
+                        I create beautiful, responsive web experiences that bring ideas to life. 
+                        Passionate about clean code, modern design, and user-centered development.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="button button--primary">View My Work</a>
+                        <a href="#contact" class="button button--outline">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero__image">
+                    <div class="hero__blob">
+                        <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190 15.5C195.5 20.5 200 35.5 195 55.5C190 75.5 175 100.5 155 115.5C135 130.5 110 135.5 85 130.5C60 125.5 35 110.5 20 85.5C5 60.5 0 25.5 15 5.5C30 -14.5 65 -19.5 95 -14.5C125 -9.5 150 5.5 175 15.5C184.5 10.5 190 15.5 190 15.5Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190 15.5C195.5 20.5 200 35.5 195 55.5C190 75.5 175 100.5 155 115.5C135 130.5 110 135.5 85 130.5C60 125.5 35 110.5 20 85.5C5 60.5 0 25.5 15 5.5C30 -14.5 65 -19.5 95 -14.5C125 -9.5 150 5.5 175 15.5C184.5 10.5 190 15.5 190 15.5Z"/>
+                                <image href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4NyIgdmlld0JveD0iMCAwIDIwMCAxODciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTg3IiBmaWxsPSIjM2Y0ZjVmIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iOTMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+UHJvZmlsZSBJbWFnZTwvdGV4dD4KPC9zdmc+" x="0" y="0" width="200" height="187"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#about" class="hero__scroll-button">
+                    <i class="fas fa-mouse"></i>
+                    <span>Scroll down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+                
+                <div class="about__container">
+                    <div class="about__image">
+                        <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" rx="150" fill="url(#gradient1)"/>
+                            <text x="150" y="150" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" dominant-baseline="middle">Profile Photo</text>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    
+                    <div class="about__data">
+                        <p class="about__description">
+                            I'm a passionate Frontend Developer with over 3 years of experience creating 
+                            engaging web experiences. I specialize in modern JavaScript frameworks, 
+                            responsive design, and turning complex problems into simple, beautiful designs.
+                        </p>
+                        
+                        <div class="about__info">
+                            <div class="about__info-item">
+                                <span class="about__info-title">15+</span>
+                                <span class="about__info-name">Projects<br>Completed</span>
+                            </div>
+                            
+                            <div class="about__info-item">
+                                <span class="about__info-title">3+</span>
+                                <span class="about__info-name">Years<br>Experience</span>
+                            </div>
+                            
+                            <div class="about__info-item">
+                                <span class="about__info-title">50+</span>
+                                <span class="about__info-name">Happy<br>Clients</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about__buttons">
+                            <a href="#contact" class="button button--primary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most recent work</span>
+                
+                <div class="projects__container">
+                    <!-- Project 1 -->
+                    <div class="project__card">
+                        <div class="project__image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#projectGradient1)"/>
+                                <circle cx="100" cy="60" r="30" fill="rgba(255,255,255,0.2)"/>
+                                <circle cx="300" cy="140" r="40" fill="rgba(255,255,255,0.1)"/>
+                                <rect x="150" y="80" width="100" height="40" rx="20" fill="rgba(255,255,255,0.3)"/>
+                                <text x="200" y="105" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">E-Commerce</text>
+                                <defs>
+                                    <linearGradient id="projectGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        
+                        <div class="project__content">
+                            <h3 class="project__title">Modern E-Commerce Platform</h3>
+                            <p class="project__description">
+                                A fully responsive e-commerce platform built with React and Node.js. 
+                                Features include user authentication, payment processing, and an admin dashboard.
+                            </p>
+                            
+                            <div class="project__stack">
+                                <span class="project__tech">React</span>
+                                <span class="project__tech">Node.js</span>
+                                <span class="project__tech">MongoDB</span>
+                                <span class="project__tech">Stripe</span>
+                            </div>
+                            
+                            <div class="project__links">
+                                <a href="#" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="project__link">
+                                    <i class="fab fa-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project__card">
+                        <div class="project__image">
+                            <svg width="100%" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="url(#projectGradient2)"/>
+                                <circle cx="320" cy="50" r="25" fill="rgba(255,255,255,0.2)"/>
+                                <circle cx="80" cy="150" r="35" fill="rgba(255,255,255,0.1)"/>
+                                <rect x="150" y="80" width="100" height="40" rx="20" fill="rgba(255,255,255,0.3)"/>
+                                <text x="200" y="105" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">Task Manager</text>
+                                <defs>
+                                    <linearGradient id="projectGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        
+                        <div class="project__content">
+                            <h3 class="project__title">Collaborative Task Manager</h3>
+                            <p class="project__description">
+                                A collaborative task management application with real-time updates, 
+                                drag-and-drop functionality, and team collaboration features.
+                            </p>
+                            
+                            <div class="project__stack">
+                                <span class="project__tech">Vue.js</span>
+                                <span class="project__tech">Socket.io</span>
+                                <span class="project__tech">Express</span>
+                                <span class="project__tech">PostgreSQL</span>
+                            </div>
+                            
+                            <div class="project__links">
+                                <a href="#" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="project__link">
+                                    <i class="fab fa-github"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+                        
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="fas fa-envelope contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">kibochilodrick@gmail.com</span>
+                                <a href="mailto:kibochilodrick@gmail.com" class="contact__button">
+                                    Write me <i class="fas fa-arrow-right contact__button-icon"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class="fab fa-linkedin contact__card-icon"></i>
+                                <h3 class="contact__card-title">LinkedIn</h3>
+                                <span class="contact__card-data">@kibochilodrick</span>
+                                <a href="#" class="contact__button">
+                                    Connect <i class="fas fa-arrow-right contact__button-icon"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="contact__card">
+                                <i class="fab fa-github contact__card-icon"></i>
+                                <h3 class="contact__card-title">GitHub</h3>
+                                <span class="contact__card-data">@technobored</span>
+                                <a href="#" class="contact__button">
+                                    Follow <i class="fas fa-arrow-right contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <h3 class="contact__title">Write me your project</h3>
+                        
+                        <form class="contact__form">
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Name</label>
+                                <input type="text" class="contact__form-input" placeholder="Insert your name">
+                            </div>
+                            
+                            <div class="contact__form-div">
+                                <label class="contact__form-tag">Email</label>
+                                <input type="email" class="contact__form-input" placeholder="Insert your email">
+                            </div>
+                            
+                            <div class="contact__form-div contact__form-area">
+                                <label class="contact__form-tag">Project</label>
+                                <textarea class="contact__form-input" cols="30" rows="10" placeholder="Write your project details"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary">
+                                Send Message
+                                <i class="fas fa-paper-plane button__icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Lodrick Kibochi</h1>
+            
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="footer__social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="footer__social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            
+            <span class="footer__copy">
+                &#169; Lodrick Kibochi. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="fas fa-angle-up scrolltop__icon"></i>
+    </a>
+</body>
+</html>
