@@ -233,7 +233,7 @@ img {
 }
 
 .nav__menu {
-  position: fixed;
+  position: sticky;
   bottom: -100%;
   left: 0;
   width: 100%;
@@ -507,7 +507,7 @@ img {
   justify-content: center;
 }
 
-/*=============== PROJECTS ===============*/
+/* PROJECTS */
 .projects {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 4rem 0;
@@ -609,7 +609,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/*=============== CONTACT ===============*/
+/* CONTACT */
 .contact {
   background: var(--container-color);
   padding: 4rem 0;
@@ -1143,11 +1143,11 @@ input[type="checkbox"] {
 
 /* Mobile menu styles - using CSS-only approach with :target pseudo-class */
 .nav__menu {
-  position: fixed;
+  position: static;
   bottom: -100%;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(253, 4, 4, 0.95);
   backdrop-filter: blur(10px);
   padding: 2rem 1.5rem 4rem;
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
@@ -1155,10 +1155,10 @@ input[type="checkbox"] {
   transition: .3s;
 }
 
-/* Show menu when target is active 
+/* Show menu when target is active */
 .nav__menu:target {
   bottom: 0;
-}*/
+}
 
 /* Close button functionality */
 .nav__close {
