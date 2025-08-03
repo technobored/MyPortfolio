@@ -1143,8 +1143,6 @@ input[type="checkbox"] {
 
 /* Mobile menu styles - using CSS-only approach with :target pseudo-class */
 .nav__menu {
-  position: static;
-  bottom: -100%;
   left: 0;
   width: 100%;
   background: rgba(253, 4, 4, 0.95);
