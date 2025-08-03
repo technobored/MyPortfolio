@@ -1141,9 +1141,10 @@ input[type="checkbox"] {
   color: var(--first-color);
 }
 
-/* Mobile menu styles - using CSS-only approach with :target pseudo-class 
+/* Mobile menu styles - using CSS-only approach with :target pseudo-class */
 .nav__menu {
   position: fixed;
+  bottom: -100%;
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
@@ -1153,11 +1154,11 @@ input[type="checkbox"] {
   border-radius: 1.5rem 1.5rem 0 0;
   transition: .3s;
 }
-*/
-/* Show menu when target is active */
+
+/* Show menu when target is active 
 .nav__menu:target {
   bottom: 0;
-}
+}*/
 
 /* Close button functionality */
 .nav__close {
