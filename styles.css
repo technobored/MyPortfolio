@@ -1143,7 +1143,7 @@ input[type="checkbox"] {
 
 /* Mobile menu styles - using CSS-only approach with :target pseudo-class */
 .nav__menu {
-  position: fixed;
+  position: absolute;
   top: -100%;
   left: 0;
   width: 100%;
@@ -1155,12 +1155,9 @@ input[type="checkbox"] {
   transition: .3s;
 }
 
-/* Show menu when target is active */
+/* Show menu when target is active 
 .nav__menu:target {
   bottom: 0;
-}
-.nav-container {
-    position: relative;
 }
 /* Close button functionality */
 .nav__close {
