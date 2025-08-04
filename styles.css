@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -203,12 +203,12 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: all .3s ease;
 }
 
@@ -233,21 +233,21 @@ img {
 }
 
 .nav__menu {
-  position: sticky;
+  position: fixed;
   top: -100%;
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  padding: 2rem 1.5rem 4rem;
-  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
-  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 4rem 1.5rem 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  border-radius: 0 0 1.5rem 1.5rem;
   transition: .3s;
 }
 
 /* Show menu */
 .show-menu {
-  bottom: 0;
+  top: var(--header-height);
 }
 
 .nav__list {
@@ -507,7 +507,7 @@ img {
   justify-content: center;
 }
 
-/* PROJECTS */
+/*=============== PROJECTS ===============*/
 .projects {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 4rem 0;
@@ -609,7 +609,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/* CONTACT */
+/*=============== CONTACT ===============*/
 .contact {
   background: var(--container-color);
   padding: 4rem 0;
@@ -1005,7 +1005,7 @@ img {
 
   .nav__menu {
     margin-left: auto;
-    position: absolute;
+    position: static;
     width: auto;
     background: transparent;
     backdrop-filter: none;
@@ -1143,8 +1143,8 @@ input[type="checkbox"] {
 
 /* Mobile menu styles - using CSS-only approach with :target pseudo-class */
 .nav__menu {
-  position: absolute;
-  top: -100%;
+  position: fixed;
+  bottom: -100%;
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
@@ -1157,8 +1157,9 @@ input[type="checkbox"] {
 
 /* Show menu when target is active */
 .nav__menu:target {
-  top: 0;
+  bottom: 0;
 }
+
 /* Close button functionality */
 .nav__close {
   position: absolute;
