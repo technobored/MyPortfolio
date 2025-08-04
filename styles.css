@@ -1155,9 +1155,9 @@ input[type="checkbox"] {
   transition: .3s;
 }
 
-/* Show menu when target is active 
+/* Show menu when target is active */
 .nav__menu:target {
-  bottom: 0;
+  top: 0;
 }
 /* Close button functionality */
 .nav__close {
