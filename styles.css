@@ -1005,7 +1005,7 @@ img {
 
   .nav__menu {
     margin-left: auto;
-    position: static;
+    position: absolute;
     width: auto;
     background: transparent;
     backdrop-filter: none;
@@ -1145,9 +1145,9 @@ input[type="checkbox"] {
 .nav__menu {
   position:absolute;
   bottom: -100%;
-  left: 0;rgba(247, 245, 245, 0.95)
+  left: 0;rgba(255, 255, 255, 0.95)
   width: 100%;
-  background: rgba(253, 4, 4, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 2rem 1.5rem 4rem;
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
